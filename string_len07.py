@@ -1,4 +1,4 @@
-def main(s1,s2,s3):
+def main(s1, s2, s3):
     """
     Given three strings, s1, s2 and s3. return their odd lengths, example "[s1, s2]". If there is no odd length, return "[]".
     Args:
@@ -8,4 +8,18 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    result = ''
+    if len(s1) % 2 == 1:
+
+        result +=f'"{s1}",'
+    if len(s2) % 2 == 1:
+        result += f'"{s2}",'
+    if len(s3) % 2 == 1:
+        result += f'"{s3}"'
+    else:
+        result = ''
+    return f'[{result} ]'
+
+
+v = main('code', 'pthoon', 'code')
+print(v)
