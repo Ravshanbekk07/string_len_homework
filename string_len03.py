@@ -7,4 +7,8 @@ def main(a,b):
     Returns:
         True or False
     """
-    return
+    return len(a)== len(b)
+
+
+v = main('code','examb')
+print(v)
