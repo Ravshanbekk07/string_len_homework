@@ -6,4 +6,7 @@ def main(s):
     Returns:
         string
     """
-    return
+    return len(s) * '*'
+
+v = main('code')
+print(v)
